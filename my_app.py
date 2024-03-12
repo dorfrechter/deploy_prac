@@ -6,7 +6,7 @@ df = px.data.gapminder()
 my_app= Dash(__name__)
 server = my_app.server
 
-app.layout = html.Div(
+my_app.layout = html.Div(
     [
         html.H4("Animated GDP and population over decades"),
         html.P("Select an animation:"),
@@ -53,4 +53,4 @@ def display_animated_graph(selection):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    my_app.run_server(debug=True)
