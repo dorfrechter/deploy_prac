@@ -20,7 +20,7 @@ my_app.layout = html.Div(
 )
 
 
-@app.callback(
+@my_app.callback(
     Output("graph", "figure"), Input("selection", "value")
 )
 def display_animated_graph(selection):
